@@ -70,7 +70,7 @@ app.get('/api/saborMasa', (req, res) => {
 		}
 	});
 });
-app.get('/api/sabor/:id', (req, res) => {
+app.get('/api/saborMasa/:id', (req, res) => {
 	let retorno = [];
 	const { id } = req.params;
 	mongoose.connection.db.listCollections().toArray((err, tablas) => {
