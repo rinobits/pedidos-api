@@ -52,6 +52,7 @@ app.get('/api/tipoMasa/:id', (req, res) => {
 				});
 			}
 		}
+		if(retorno.length == 0) res.json(retorno);
 	});
 });
 //sabor de masa
@@ -86,6 +87,7 @@ app.get('/api/saborMasa/:id', (req, res) => {
 				});
 			}
 		}
+		if(retorno.length == 0) res.json(retorno);
 	});
 });
 // Cobertura
@@ -120,6 +122,7 @@ app.get('/api/cobertura/:id', (req, res) => {
 				});
 			}
 		}
+		if(retorno.length == 0) res.json(retorno);
 	});
 });
 // hora
@@ -154,6 +157,7 @@ app.get('/api/hora/:id', (req, res) => {
 				});
 			}
 		}
+		if(retorno.length == 0) res.json(retorno);
 	});
 });
 //tamaño
@@ -188,6 +192,7 @@ app.get('/api/tamano/:id', (req, res) => {
 				});
 			}
 		}
+		if(retorno.length == 0) res.json(retorno);
 	});
 });
 // Ejecución del servidor
